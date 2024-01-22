@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="57" failures="9" errors="0" time="60.958">
+  <testsuite name="useParticipants" errors="0" failures="0" skipped="1" timestamp="2024-01-22T21:14:53" time="21.002" tests="1">
+    <testcase classname="useParticipants with each iteration returns current list of participants" name="useParticipants with each iteration returns current list of participants" time="0.003">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="MessageCard" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:14:53" time="22.512" tests="2">
+    <testcase classname="MessageCard message user is different as current user has not special class" name="MessageCard message user is different as current user has not special class" time="0.107">
+    </testcase>
+    <testcase classname="MessageCard message user is same as current user has special class" name="MessageCard message user is same as current user has special class" time="0.026">
+    </testcase>
+  </testsuite>
+  <testsuite name="Messages" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:14:53" time="22.59" tests="2">
+    <testcase classname="Messages messages displayed has same number of messages as they are available at the time" name="Messages messages displayed has same number of messages as they are available at the time" time="0.169">
+    </testcase>
+    <testcase classname="Messages scroll is always kept at bottom calls useKeepScrollAtBottom every time messages are updated" name="Messages scroll is always kept at bottom calls useKeepScrollAtBottom every time messages are updated" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="LoginController" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:14:53" time="22.564" tests="2">
+    <testcase classname="LoginController user is not logged in renders login screen" name="LoginController user is not logged in renders login screen" time="0.227">
+    </testcase>
+    <testcase classname="LoginController user is logged in renders nothing" name="LoginController user is logged in renders nothing" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="MessageInput" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:14:53" time="23.258" tests="7">
+    <testcase classname="MessageInput renders properly" name="MessageInput renders properly" time="0.341">
+    </testcase>
+    <testcase classname="MessageInput user is not logged in is disabled" name="MessageInput user is not logged in is disabled" time="0.073">
+    </testcase>
+    <testcase classname="MessageInput user is logged in is enabled" name="MessageInput user is logged in is enabled" time="0.081">
+    </testcase>
+    <testcase classname="MessageInput user is logged in post button is clicked nothing is written in does not post message" name="MessageInput user is logged in post button is clicked nothing is written in does not post message" time="0.087">
+    </testcase>
+    <testcase classname="MessageInput user is logged in post button is clicked something is written in posts message" name="MessageInput user is logged in post button is clicked something is written in posts message" time="0.146">
+    </testcase>
+    <testcase classname="MessageInput user is logged in ENTER key is pressed nothing is written in does not post message" name="MessageInput user is logged in ENTER key is pressed nothing is written in does not post message" time="0.035">
+    </testcase>
+    <testcase classname="MessageInput user is logged in ENTER key is pressed something is written in posts message" name="MessageInput user is logged in ENTER key is pressed something is written in posts message" time="0.09">
+    </testcase>
+  </testsuite>
+  <testsuite name="LoginModal" errors="0" failures="2" skipped="0" timestamp="2024-01-22T21:14:53" time="23.304" tests="4">
+    <testcase classname="LoginModal renders properly" name="LoginModal renders properly" time="0.282">
+    </testcase>
+    <testcase classname="LoginModal submit button is clicked initiates login with provided input" name="LoginModal submit button is clicked initiates login with provided input" time="0.148">
+    </testcase>
+    <testcase classname="LoginModal user credentials are invalid submit button is clicked displays an error message" name="LoginModal user credentials are invalid submit button is clicked displays an error message" time="0.104">
+      <failure>TypeError: MutationObserver is not a constructor
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:92:18
+    at new Promise (&lt;anonymous&gt;)
+    at waitFor (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:40:10)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:54
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:57:22
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:61:24
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:60:20
+    at new Promise (&lt;anonymous&gt;)
+    at asyncAct (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:38:14)
+    at Object.asyncWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:56:35)
+    at waitForWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:35)
+    at findByTestId (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:101:33)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\components\LoginModal.test.js:54:22)
+    at Object.asyncJestTest (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="LoginModal user credentials are invalid submit button is clicked displays an error message" name="LoginModal user credentials are invalid submit button is clicked displays an error message" time="0.063">
+      <failure>TypeError: MutationObserver is not a constructor
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:92:18
+    at new Promise (&lt;anonymous&gt;)
+    at waitFor (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:40:10)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:54
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:57:22
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:61:24
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:60:20
+    at new Promise (&lt;anonymous&gt;)
+    at asyncAct (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:38:14)
+    at Object.asyncWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:56:35)
+    at waitForWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:35)
+    at findByTestId (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:101:33)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\components\LoginModal.test.js:67:22)
+    at Object.asyncJestTest (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="App" errors="0" failures="7" skipped="0" timestamp="2024-01-22T21:14:53" time="23.667" tests="11">
+    <testcase classname="App has all of its components" name="App has all of its components" time="0.224">
+    </testcase>
+    <testcase classname="App has calls being made" name="App has calls being made" time="0.072">
+    </testcase>
+    <testcase classname="App user is not logged in presents login modal" name="App user is not logged in presents login modal" time="0.072">
+    </testcase>
+    <testcase classname="App user is not logged in user enters wrong credentials displays error message" name="App user is not logged in user enters wrong credentials displays error message" time="0.214">
+      <failure>TypeError: MutationObserver is not a constructor
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:92:18
+    at new Promise (&lt;anonymous&gt;)
+    at waitFor (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:40:10)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:54
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:57:22
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:61:24
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:60:20
+    at new Promise (&lt;anonymous&gt;)
+    at asyncAct (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:38:14)
+    at Object.asyncWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:56:35)
+    at waitForWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:35)
+    at findByTestId (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:101:33)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:60:22)
+    at Object.asyncJestTest (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="App user is not logged in message input is disabled" name="App user is not logged in message input is disabled" time="0.018">
+    </testcase>
+    <testcase classname="App user is not logged in user logs in successfully hides login modal" name="App user is not logged in user logs in successfully hides login modal" time="0.058">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;input-name&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;absolute w-screen h-screen subpixel-antialiased bg-gray-600 justify-items-center&quot;
+    &gt;
+      &lt;header
+        class=&quot;mt-10 text-center&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-5xl font-bold tracking-widest text-gray-100&quot;
+        &gt;
+          CHAT
+          &lt;span
+            class=&quot;text-red-400&quot;
+          &gt;
+            !
+          &lt;/span&gt;
+        &lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div
+        class=&quot;container flex mx-auto mt-10 overflow-hidden border shadow-2xl rounded-2xl&quot;
+        style=&quot;height: 600px;&quot;
+      &gt;
+        &lt;section
+          class=&quot;p-6 bg-gray-100 overflow-y-scroll flex-1 w-auto&quot;
+          data-testid=&quot;messages&quot;
+        /&gt;
+        &lt;section
+          class=&quot;bg-teal-500 p-4 overflow-y-scroll-auto w-64&quot;
+          data-testid=&quot;participants&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;section
+        class=&quot;container flex p-0 mx-auto mt-4&quot;
+        data-testid=&quot;test-input&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex my-4 flex-1 w-auto&quot;
+          data-testid=&quot;form-input&quot;
+        &gt;
+          &lt;input
+            class=&quot;w-64 px-2 py-0 text-xl leading-xl text-gray-600 outline-none focus:shadow-outline placeholder-gray-400 border border-gray-500 shadow rounded-lg text-gray-600 flex-1 w-auto&quot;
+            data-testid=&quot;message-input-text&quot;
+            disabled=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;button
+          class=&quot;px-4 py-1 bg-teal-400 leading-1 my-4 border border-gray-600 border-solid shadow-xl outline-none font-bold text-gray-200 hover:bg-orange-700 focus:shadow-outline rounded-xl ml-4&quot;
+          data-testid=&quot;message-input-button&quot;
+          disabled=&quot;&quot;
+        &gt;
+          SEND
+        &lt;/button&gt;
+      &lt;/section&gt;
+      &lt;div
+        class=&quot;container flex justify-end mx-auto&quot;
+      &gt;
+        &lt;span
+          class=&quot;block font-mono font-bold text-black&quot;
+        &gt;
+          https://github.com/abelta/chat-room
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:90:38
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:62:17
+    at getByTestId (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:111:19)
+    at userLogIn (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\setupTests.js:21:25)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:75:28
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:75:12)
+    at Object.asyncJestTest (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="App user is logged in message input is enabled" name="App user is logged in message input is enabled" time="0.028">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;input-name&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;absolute w-screen h-screen subpixel-antialiased bg-gray-600 justify-items-center&quot;
+    &gt;
+      &lt;header
+        class=&quot;mt-10 text-center&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-5xl font-bold tracking-widest text-gray-100&quot;
+        &gt;
+          CHAT
+          &lt;span
+            class=&quot;text-red-400&quot;
+          &gt;
+            !
+          &lt;/span&gt;
+        &lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div
+        class=&quot;container flex mx-auto mt-10 overflow-hidden border shadow-2xl rounded-2xl&quot;
+        style=&quot;height: 600px;&quot;
+      &gt;
+        &lt;section
+          class=&quot;p-6 bg-gray-100 overflow-y-scroll flex-1 w-auto&quot;
+          data-testid=&quot;messages&quot;
+        /&gt;
+        &lt;section
+          class=&quot;bg-teal-500 p-4 overflow-y-scroll-auto w-64&quot;
+          data-testid=&quot;participants&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;section
+        class=&quot;container flex p-0 mx-auto mt-4&quot;
+        data-testid=&quot;test-input&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex my-4 flex-1 w-auto&quot;
+          data-testid=&quot;form-input&quot;
+        &gt;
+          &lt;input
+            class=&quot;w-64 px-2 py-0 text-xl leading-xl text-gray-600 outline-none focus:shadow-outline placeholder-gray-400 border border-gray-500 shadow rounded-lg text-gray-600 flex-1 w-auto&quot;
+            data-testid=&quot;message-input-text&quot;
+            disabled=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;button
+          class=&quot;px-4 py-1 bg-teal-400 leading-1 my-4 border border-gray-600 border-solid shadow-xl outline-none font-bold text-gray-200 hover:bg-orange-700 focus:shadow-outline rounded-xl ml-4&quot;
+          data-testid=&quot;message-input-button&quot;
+          disabled=&quot;&quot;
+        &gt;
+          SEND
+        &lt;/button&gt;
+      &lt;/section&gt;
+      &lt;div
+        class=&quot;container flex justify-end mx-auto&quot;
+      &gt;
+        &lt;span
+          class=&quot;block font-mono font-bold text-black&quot;
+        &gt;
+          https://github.com/abelta/chat-room
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:90:38
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:62:17
+    at getByTestId (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:111:19)
+    at userLogIn (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\setupTests.js:21:25)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:86:28
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:86:12)
+    at Object.asyncJestTest (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="App user is logged in message input submitting without text does not send a message" name="App user is logged in message input submitting without text does not send a message" time="0.031">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;input-name&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;absolute w-screen h-screen subpixel-antialiased bg-gray-600 justify-items-center&quot;
+    &gt;
+      &lt;header
+        class=&quot;mt-10 text-center&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-5xl font-bold tracking-widest text-gray-100&quot;
+        &gt;
+          CHAT
+          &lt;span
+            class=&quot;text-red-400&quot;
+          &gt;
+            !
+          &lt;/span&gt;
+        &lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div
+        class=&quot;container flex mx-auto mt-10 overflow-hidden border shadow-2xl rounded-2xl&quot;
+        style=&quot;height: 600px;&quot;
+      &gt;
+        &lt;section
+          class=&quot;p-6 bg-gray-100 overflow-y-scroll flex-1 w-auto&quot;
+          data-testid=&quot;messages&quot;
+        /&gt;
+        &lt;section
+          class=&quot;bg-teal-500 p-4 overflow-y-scroll-auto w-64&quot;
+          data-testid=&quot;participants&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;section
+        class=&quot;container flex p-0 mx-auto mt-4&quot;
+        data-testid=&quot;test-input&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex my-4 flex-1 w-auto&quot;
+          data-testid=&quot;form-input&quot;
+        &gt;
+          &lt;input
+            class=&quot;w-64 px-2 py-0 text-xl leading-xl text-gray-600 outline-none focus:shadow-outline placeholder-gray-400 border border-gray-500 shadow rounded-lg text-gray-600 flex-1 w-auto&quot;
+            data-testid=&quot;message-input-text&quot;
+            disabled=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;button
+          class=&quot;px-4 py-1 bg-teal-400 leading-1 my-4 border border-gray-600 border-solid shadow-xl outline-none font-bold text-gray-200 hover:bg-orange-700 focus:shadow-outline rounded-xl ml-4&quot;
+          data-testid=&quot;message-input-button&quot;
+          disabled=&quot;&quot;
+        &gt;
+          SEND
+        &lt;/button&gt;
+      &lt;/section&gt;
+      &lt;div
+        class=&quot;container flex justify-end mx-auto&quot;
+      &gt;
+        &lt;span
+          class=&quot;block font-mono font-bold text-black&quot;
+        &gt;
+          https://github.com/abelta/chat-room
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:90:38
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:62:17
+    at getByTestId (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:111:19)
+    at userLogIn (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\setupTests.js:21:25)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:96:30
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:96:14)
+    at Object.asyncJestLifecycle (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:53:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="App user is logged in message input submitting with text sends a message" name="App user is logged in message input submitting with text sends a message" time="0.033">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;input-name&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;absolute w-screen h-screen subpixel-antialiased bg-gray-600 justify-items-center&quot;
+    &gt;
+      &lt;header
+        class=&quot;mt-10 text-center&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-5xl font-bold tracking-widest text-gray-100&quot;
+        &gt;
+          CHAT
+          &lt;span
+            class=&quot;text-red-400&quot;
+          &gt;
+            !
+          &lt;/span&gt;
+        &lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div
+        class=&quot;container flex mx-auto mt-10 overflow-hidden border shadow-2xl rounded-2xl&quot;
+        style=&quot;height: 600px;&quot;
+      &gt;
+        &lt;section
+          class=&quot;p-6 bg-gray-100 overflow-y-scroll flex-1 w-auto&quot;
+          data-testid=&quot;messages&quot;
+        /&gt;
+        &lt;section
+          class=&quot;bg-teal-500 p-4 overflow-y-scroll-auto w-64&quot;
+          data-testid=&quot;participants&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;section
+        class=&quot;container flex p-0 mx-auto mt-4&quot;
+        data-testid=&quot;test-input&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex my-4 flex-1 w-auto&quot;
+          data-testid=&quot;form-input&quot;
+        &gt;
+          &lt;input
+            class=&quot;w-64 px-2 py-0 text-xl leading-xl text-gray-600 outline-none focus:shadow-outline placeholder-gray-400 border border-gray-500 shadow rounded-lg text-gray-600 flex-1 w-auto&quot;
+            data-testid=&quot;message-input-text&quot;
+            disabled=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;button
+          class=&quot;px-4 py-1 bg-teal-400 leading-1 my-4 border border-gray-600 border-solid shadow-xl outline-none font-bold text-gray-200 hover:bg-orange-700 focus:shadow-outline rounded-xl ml-4&quot;
+          data-testid=&quot;message-input-button&quot;
+          disabled=&quot;&quot;
+        &gt;
+          SEND
+        &lt;/button&gt;
+      &lt;/section&gt;
+      &lt;div
+        class=&quot;container flex justify-end mx-auto&quot;
+      &gt;
+        &lt;span
+          class=&quot;block font-mono font-bold text-black&quot;
+        &gt;
+          https://github.com/abelta/chat-room
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:90:38
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:62:17
+    at getByTestId (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:111:19)
+    at userLogIn (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\setupTests.js:21:25)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:96:30
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:96:14)
+    at Object.asyncJestLifecycle (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:53:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+      <failure>TypeError: MutationObserver is not a constructor
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:92:18
+    at new Promise (&lt;anonymous&gt;)
+    at waitFor (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:40:10)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:54
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:57:22
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:61:24
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:60:20
+    at new Promise (&lt;anonymous&gt;)
+    at asyncAct (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:38:14)
+    at Object.asyncWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:56:35)
+    at waitForWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:35)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:116:26)
+    at Object.asyncJestTest (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="App user is logged in message input participants displays the result of the getParticipants call" name="App user is logged in message input participants displays the result of the getParticipants call" time="0.036">
+      <failure>TypeError: MutationObserver is not a constructor
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:92:18
+    at new Promise (&lt;anonymous&gt;)
+    at waitFor (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:40:10)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:54
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:57:22
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:61:24
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:60:20
+    at new Promise (&lt;anonymous&gt;)
+    at asyncAct (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:38:14)
+    at Object.asyncWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:56:35)
+    at waitForWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:35)
+    at findByText (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:101:33)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:139:38)
+    at Object.asyncJestTest (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="App user is logged in message input messages displays the result of the getMessages call" name="App user is logged in message input messages displays the result of the getMessages call" time="0.019">
+      <failure>TypeError: MutationObserver is not a constructor
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:92:18
+    at new Promise (&lt;anonymous&gt;)
+    at waitFor (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:40:10)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:54
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:57:22
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:61:24
+    at batchedUpdates$1 (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom.development.js:22380:12)
+    at act (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1042:14)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:60:20
+    at new Promise (&lt;anonymous&gt;)
+    at asyncAct (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\act-compat.js:38:14)
+    at Object.asyncWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\dist\pure.js:56:35)
+    at waitForWrapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\wait-for.js:174:35)
+    at findByText (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\query-helpers.js:101:33)
+    at Object.&lt;anonymous&gt; (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\src\App.test.js:160:34)
+    at Object.asyncJestTest (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\cristianbetancourth\Desktop\Semillero\Entregables\Mes 3\Jenkins Shraed Libreries\app\chat-room\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="useMessages" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:14" time="4.637" tests="1">
+    <testcase classname="useMessages with each update returns more messages" name="useMessages with each update returns more messages" time="0.587">
+    </testcase>
+  </testsuite>
+  <testsuite name="ParticipantCard" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:16" time="3.473" tests="1">
+    <testcase classname="ParticipantCard renders properly" name="ParticipantCard renders properly" time="0.087">
+    </testcase>
+  </testsuite>
+  <testsuite name="useMutateLogin" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:16" time="3.565" tests="2">
+    <testcase classname="useMutateLogin returns a function" name="useMutateLogin returns a function" time="0.055">
+    </testcase>
+    <testcase classname="useMutateLogin returned function calls api/login" name="useMutateLogin returned function calls api/login" time="0.026">
+    </testcase>
+  </testsuite>
+  <testsuite name="useMutatePostMessage" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:16" time="3.744" tests="2">
+    <testcase classname="useMutatePostMessage returns a function" name="useMutatePostMessage returns a function" time="0.072">
+    </testcase>
+    <testcase classname="useMutatePostMessage returned function posts a message" name="useMutatePostMessage returned function posts a message" time="0.029">
+    </testcase>
+  </testsuite>
+  <testsuite name="login" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:17" time="3.456" tests="2">
+    <testcase classname="login makes a fetch call" name="login makes a fetch call" time="0.009">
+    </testcase>
+    <testcase classname="login returns a user" name="login returns a user" time="0.055">
+    </testcase>
+  </testsuite>
+  <testsuite name="Participants" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:17" time="3.536" tests="1">
+    <testcase classname="Participants has same amount of cards as participants are provided" name="Participants has same amount of cards as participants are provided" time="0.054">
+    </testcase>
+  </testsuite>
+  <testsuite name="getParticipants" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:17" time="3.592" tests="2">
+    <testcase classname="getParticipants makes a fetch call" name="getParticipants makes a fetch call" time="0.006">
+    </testcase>
+    <testcase classname="getParticipants returns data" name="getParticipants returns data" time="0.044">
+    </testcase>
+  </testsuite>
+  <testsuite name="arrayFilledWith" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:19" time="3.899" tests="2">
+    <testcase classname="arrayFilledWith no length parameter is passed returns an array of 10 elements with the content specified in the callback parameter" name="arrayFilledWith no length parameter is passed returns an array of 10 elements with the content specified in the callback parameter" time="0.036">
+    </testcase>
+    <testcase classname="arrayFilledWith length parameter is passed returns an array of the given length" name="arrayFilledWith length parameter is passed returns an array of the given length" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="getMessages" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:20" time="3.566" tests="2">
+    <testcase classname="getMessages makes a fetch call" name="getMessages makes a fetch call" time="0.007">
+    </testcase>
+    <testcase classname="getMessages returns data" name="getMessages returns data" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="maybe" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:20" time="3.669" tests="2">
+    <testcase classname="maybe with a probability of 0 does not ever execute callback" name="maybe with a probability of 0 does not ever execute callback" time="0.01">
+    </testcase>
+    <testcase classname="maybe with a probability of 1 executes callback" name="maybe with a probability of 1 executes callback" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="FormInput" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:20" time="3.915" tests="1">
+    <testcase classname="FormInput renders properly" name="FormInput renders properly" time="0.188">
+    </testcase>
+  </testsuite>
+  <testsuite name="useCurrentUser" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:20" time="3.864" tests="1">
+    <testcase classname="useCurrentUser user is logged in returns current user" name="useCurrentUser user is logged in returns current user" time="0.088">
+    </testcase>
+  </testsuite>
+  <testsuite name="postMessage" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:21" time="3.817" tests="1">
+    <testcase classname="postMessage makes a fetch call" name="postMessage makes a fetch call" time="0.209">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChatView" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:21" time="4.494" tests="1">
+    <testcase classname="ChatView renders properly" name="ChatView renders properly" time="0.366">
+    </testcase>
+  </testsuite>
+  <testsuite name="sleep" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:23" time="4.198" tests="1">
+    <testcase classname="sleep used in an async function eventually resolves and executes subsequent lines" name="sleep used in an async function eventually resolves and executes subsequent lines" time="0.151">
+    </testcase>
+  </testsuite>
+  <testsuite name="Watermark" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:23" time="4.701" tests="1">
+    <testcase classname="Watermark renders properly" name="Watermark renders properly" time="0.277">
+    </testcase>
+  </testsuite>
+  <testsuite name="filterUnique" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:24" time="4.692" tests="1">
+    <testcase classname="filterUnique used as an array filter filters out unique elements in an array" name="filterUnique used as an array filter filters out unique elements in an array" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="FormButton" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:24" time="5.081" tests="1">
+    <testcase classname="FormButton renders a button" name="FormButton renders a button" time="0.194">
+    </testcase>
+  </testsuite>
+  <testsuite name="Spinner" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:25" time="4.308" tests="1">
+    <testcase classname="Spinner renders correctly" name="Spinner renders correctly" time="0.06">
+    </testcase>
+  </testsuite>
+  <testsuite name="Header" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:25" time="4.287" tests="1">
+    <testcase classname="Header renders properly" name="Header renders properly" time="0.046">
+    </testcase>
+  </testsuite>
+  <testsuite name="Logo" errors="0" failures="0" skipped="0" timestamp="2024-01-22T21:15:26" time="3.898" tests="1">
+    <testcase classname="Logo renders appropriately" name="Logo renders appropriately" time="0.072">
+    </testcase>
+  </testsuite>
+</testsuites>
